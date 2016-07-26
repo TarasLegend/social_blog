@@ -12,7 +12,7 @@ def index():
 
 @app.route('/user/<name>')
 def user(name):
-    return '<h1>Hello %s' % name
+    return '<h1>Welcome dear %s' % name
 
 
 if __name__ == '__main__':
