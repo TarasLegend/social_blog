@@ -1,7 +1,8 @@
 from flask import Flask
-
+from flask_script import Manager
 
 app = Flask(__name__)
+manager = Manager(app)
 
 
 # hello world in 127.0.0.1:5000
@@ -16,4 +17,5 @@ def user(name):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    manager.run()
+    # app.run(debug=True)
