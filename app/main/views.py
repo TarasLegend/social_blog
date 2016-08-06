@@ -81,7 +81,6 @@ def edit_profile_admin(id):
     return render_template('edit_profile.hrml', form=form, user=user)
 
 
-# permanent link
 @main.route('/post/<int:id>')
 def post(id):
     post = Post.query.get_or_404(id)
